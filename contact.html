@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBP Portfolio - Contact</title>        
+    <link rel="stylesheet" href="brain_portfolio.css">
+</head>
+<body>
+    <!-- This is where the code for the header will start -->
+    <header>
+        <a id="logo_1" href="index.html"><img src="images/logo.png" alt="Logo of a blue side profile with a pink brain in it on a white circular background."></a>
+        <!-- This is where the code for the hamburger menu will start -->
+        <div id="hamburger"></div>
+            <label class="hamburger-menu">
+                <input type="checkbox" />
+            </label>
+            <div class="sidebar">
+                <a href="index.html">Home</a>
+                <a href="about_me.html">About Me</a>
+                <a href="projects.html">My Portfolio</a>
+            </div>
+        </div>
+    </header>
+    <!-- This is where the code for the main section will start -->
+    <main id="contact_main">
+       <h2 id="contact_header">Contact Me</h2> 
+       <form>
+            <label>First Name</label>
+            <input type="text" placeholder="Joe"> 
+            <label>Last Name</label>
+            <input type="text" placeholder="Momma"> 
+            <label>Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            <label>Email</label>
+            <input type="email" placeholder="joe.momma@gmail.com"> 
+            <label>Message</label>
+            <textarea id="message" name="message" rows="4" cols="49">Tell me more about how I can help you...</textarea>
+            <button type="button" onclick="alert();">Submit</button>
+       </form>
+    </main>
+    <!-- This is where the code for my footer header will start -->
+    <footer>
+        <div class="social_foot">
+            <a href="https://github.com/TofuSlayer2021"><img src="images/Github.png" alt="White Github logo"></a>
+            <a href=""><img src="images/Instagram.png" alt="White Instagram logo"></a>
+            <a href="https://www.linkedin.com/in/iana-binde-pereira2025/"><img src="images/Linkedin.png" alt="White Linkedin logo"></a>
+        </div>
+        <a id="little_logo"><img src="images/logo.png" alt="Logo of a blue side profile with a pink brain in it on a white circular background."></a>
+    </footer>
+    <script>
+        function alert() {
+        if(!confirm("Thank you for submitting this form! I will get back to you shortly.")) {
+          return false;
+        }
+        this.form.submit();
+      }
+    </script>
+</body> 
+</html>
